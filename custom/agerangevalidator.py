@@ -1,4 +1,3 @@
-import 
 
 class AgeRangeValidator(object):
     column_name = 'age'

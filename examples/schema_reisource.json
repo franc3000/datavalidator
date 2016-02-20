@@ -28,343 +28,343 @@
         {
             "name": "OWNER 1 SUFFIX",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER 2 LABEL NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER 2 LAST NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER 2 FIRST NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER 2 MIDDLE NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER 2 SUFFIX",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER CARE OF NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL ADDRESS",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL CITY",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL STATE",
             "title": "",
-            "type": "string",
+            "type": "string"
             "constraints": { "unique": true }
         },
         {
             "name": "MAIL ZIP CODE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL ZIP+4",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL ZIP/ZIP+4",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL CARRIER ROUTE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "MAIL COUNTRY",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY ADDRESS",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY HOUSE NUMBER",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY HOUSE NUMBER PREFIX",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY HOUSE NUMBER SUFFIX",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY HOUSE NUMBER 2",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY PRE DIRECTION",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY STREET NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY STREET NAME SUFFIX",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY POST DIRECTION",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY UNIT NUMBER",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY CITY",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY STATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY ZIP CODE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY ZIP+4",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY ZIP/ZIP+4",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY CARRIER ROUTE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "COUNTY",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LAST MARKET SALE DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "ASSESSMENT YEAR",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "BATHROOMS",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "BEDROOMS",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "BLDG/LIVING AREA",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "CENSUS TRACT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "COUNTY LAND USE CODE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE AMOUNT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE INTEREST RATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE LENDER NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE LOAN RATE TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE MATURITY DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "FIRST MORTGAGE PRIMARY LOAN TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "HOMESTEAD EXEMPTION",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "IMPROVED %",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "IMPROVED VALUE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG AMOUNT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG INTEREST RATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LENDER NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LOAN RATE TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG MATURITY DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG PRIMARY LOAN TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG AMOUNT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG INTEREST RATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG LENDER NAME",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG LOAN RATE TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG MATURITY DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG MORTGAGE DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG PRIMARY LOAN TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LAND VALUE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LAST MARKET RECORDING DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LAST MARKET SALE DEED TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LAST MARKET SALE PRICE TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LAST MARKET SALE PRICE",
@@ -375,197 +375,197 @@
         {
             "name": "LOT AREA",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "LOT ACREAGE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER OCCUPIED",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER TRANSFER RECORDING DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER TRANSFER SALE DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "OWNER TRANSFER SALE PRICE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PARCEL ID",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "ALTERNATE APN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PRIOR MARKET RECORDING DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PRIOR MARKET SALE DATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PRIOR MARKET SALE PRICE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "PROPERTY TAX AMOUNT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "STATE LAND USE CODE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "SWIMMING POOL PRESENT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "TOTAL ASSESSED VALUE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "YEAR BUILT",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG BALLOON LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG CREDIT LINE LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG EQUITY LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LENDER ADDRESS",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LENDER CITY",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LENDER STATE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LENDER ZIP CODE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG LENDER ZIP+4",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG MATURED",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG PRIVATE PARTY LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG SELLER CARRY BACK",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG TERM",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 1 MTG TRANSACTION TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG BALLOON LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG CREDIT LINE LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG EQUITY LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG MATURED",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG PRIVATE PARTY LOAN",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG SELLER CARRY BACK",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG TERM",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG TRANSACTION TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "JUNIOR 2 MTG TRANSACTION TYPE",
             "title": "",
-            "type": "string",
+            "type": "string"
         },
         {
             "name": "X",
             "title": "",
-            "type": "string",
+            "type": "string"
             "description": "empty",
             "required": false
         }

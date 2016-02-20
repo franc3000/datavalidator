@@ -146,5 +146,5 @@ corelogic = {
     'INPUT FIPS CODE': 'string',
     'INPUT PARCEL ID': 'string',
     'PROPERTY MATCH CODE': 'string',
-    'EXCEPTION CODE'
+    'EXCEPTION CODE': 'string'
 }
