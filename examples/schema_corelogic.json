@@ -1,0 +1,596 @@
+{
+  "fields": [
+    {
+      "name": "fips_code",
+      "type": "string"
+    },
+    {
+      "name": "apn_unformatted",
+      "type": "string"
+    },
+    {
+      "name": "apn_formatted",
+      "type": "string"
+    },
+    {
+      "name": "apn_sequence_number",
+      "type": "string"
+    },
+    {
+      "name": "original_apn",
+      "type": "string"
+    },
+    {
+      "name": "thomas_bros_map_number",
+      "type": "string"
+    },
+    {
+      "name": "map_reference_1",
+      "type": "string"
+    },
+    {
+      "name": "map_reference_2",
+      "type": "string"
+    },
+    {
+      "name": "census_tract",
+      "type": "string"
+    },
+    {
+      "name": "block_number",
+      "type": "string"
+    },
+    {
+      "name": "lot_number",
+      "type": "string"
+    },
+    {
+      "name": "range",
+      "type": "string"
+    },
+    {
+      "name": "township",
+      "type": "string"
+    },
+    {
+      "name": "section",
+      "type": "string"
+    },
+    {
+      "name": "quarter_section",
+      "type": "string"
+    },
+    {
+      "name": "flood_zone_community_panel_id",
+      "type": "string"
+    },
+    {
+      "name": "universal_land_use_code",
+      "type": "string"
+    },
+    {
+      "name": "county_land_use_2",
+      "type": "string"
+    },
+    {
+      "name": "county_land_use_1",
+      "type": "string"
+    },
+    {
+      "name": "zoning",
+      "type": "string"
+    },
+    {
+      "name": "property_indicator_code",
+      "type": "string"
+    },
+    {
+      "name": "mobile_home_indicator_flag",
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "type": "string"
+    },
+    {
+      "name": "longitude",
+      "type": "string"
+    },
+    {
+      "name": "property_house_number_prefix",
+      "type": "string"
+    },
+    {
+      "name": "property_house_number",
+      "type": "string"
+    },
+    {
+      "name": "property_house_number_2",
+      "type": "string"
+    },
+    {
+      "name": "property_house_number_suffix",
+      "type": "string"
+    },
+    {
+      "name": "property_direction",
+      "type": "string"
+    },
+    {
+      "name": "property_street_name",
+      "type": "string"
+    },
+    {
+      "name": "property_mode",
+      "type": "string"
+    },
+    {
+      "name": "property_quadrant",
+      "type": "string"
+    },
+    {
+      "name": "property_apartment_unit_number",
+      "type": "string"
+    },
+    {
+      "name": "property_city",
+      "type": "string"
+    },
+    {
+      "name": "property_state",
+      "type": "string"
+    },
+    {
+      "name": "property_zipcode",
+      "type": "string"
+    },
+    {
+      "name": "absentee_indicator_code",
+      "type": "string"
+    },
+    {
+      "name": "owner_corporate_indicator_flag",
+      "type": "string"
+    },
+    {
+      "name": "owner_1_last_name",
+      "type": "string"
+    },
+    {
+      "name": "owner_1_first_name_mi",
+      "type": "string"
+    },
+    {
+      "name": "owner_2_last_name",
+      "type": "string"
+    },
+    {
+      "name": "owner_2_first_name_mi",
+      "type": "string"
+    },
+    {
+      "name": "owner_relationship_type_code",
+      "type": "string"
+    },
+    {
+      "name": "owner_ownership_rights_code",
+      "type": "string"
+    },
+    {
+      "name": "owner_etal_indicator_code",
+      "type": "string"
+    },
+    {
+      "name": "mail_house_number_prefix",
+      "type": "string"
+    },
+    {
+      "name": "mail_house_number",
+      "type": "string"
+    },
+    {
+      "name": "mail_house_number_2",
+      "type": "string"
+    },
+    {
+      "name": "mail_direction",
+      "type": "string"
+    },
+    {
+      "name": "mail_house_number_suffix",
+      "type": "string"
+    },
+    {
+      "name": "mail_street_name",
+      "type": "string"
+    },
+    {
+      "name": "mail_mode",
+      "type": "string"
+    },
+    {
+      "name": "mail_quadrant",
+      "type": "string"
+    },
+    {
+      "name": "mail_apartment_unit_number",
+      "type": "string"
+    },
+    {
+      "name": "mail_city",
+      "type": "string"
+    },
+    {
+      "name": "mail_state",
+      "type": "string"
+    },
+    {
+      "name": "mail_zipcode",
+      "type": "string"
+    },
+    {
+      "name": "assd_total_value",
+      "type": "string"
+    },
+    {
+      "name": "assd_land_value",
+      "type": "string"
+    },
+    {
+      "name": "assd_improvement_value",
+      "type": "string"
+    },
+    {
+      "name": "appr_total_value",
+      "type": "string"
+    },
+    {
+      "name": "appr_land_value",
+      "type": "string"
+    },
+    {
+      "name": "appr_improvement_value",
+      "type": "string"
+    },
+    {
+      "name": "mkt_total_value",
+      "type": "string"
+    },
+    {
+      "name": "mkt_land_value",
+      "type": "string"
+    },
+    {
+      "name": "mkt_improvement_value",
+      "type": "string"
+    },
+    {
+      "name": "tax_amount",
+      "type": "string"
+    },
+    {
+      "name": "tax_year",
+      "type": "string"
+    },
+    {
+      "name": "assessed_year",
+      "type": "string"
+    },
+    {
+      "name": "batch_id",
+      "type": "string"
+    },
+    {
+      "name": "batch_seq",
+      "type": "string"
+    },
+    {
+      "name": "multi_apn_flag_code",
+      "type": "string"
+    },
+    {
+      "name": "multi_apn_count",
+      "type": "string"
+    },
+    {
+      "name": "sales_document_type_code",
+      "type": "string"
+    },
+    {
+      "name": "recording_date",
+      "type": "string"
+    },
+    {
+      "name": "sale_amount",
+      "type": "string"
+    },
+    {
+      "name": "sale_date",
+      "type": "string"
+    },
+    {
+      "name": "sale_code",
+      "type": "string"
+    },
+    {
+      "name": "inter_family",
+      "type": "string"
+    },
+    {
+      "name": "sales_transaction_type_code",
+      "type": "string"
+    },
+    {
+      "name": "seller_name_1",
+      "type": "string"
+    },
+    {
+      "name": "seller_name_2",
+      "type": "string"
+    },
+    {
+      "name": "seller_last_name",
+      "type": "string"
+    },
+    {
+      "name": "seller_first_name",
+      "type": "string"
+    },
+    {
+      "name": "1st_mortgage_amount",
+      "type": "string"
+    },
+    {
+      "name": "1st_mortgage_loan_type_code",
+      "type": "string"
+    },
+    {
+      "name": "1st_mortgage_deed_type_code",
+      "type": "string"
+    },
+    {
+      "name": "1st_mortgage_date",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_transaction_type_code",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_amount",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_date",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_code",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_recording_date",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_mortgage_amount",
+      "type": "string"
+    },
+    {
+      "name": "prior_sale_document_type_code",
+      "type": "string"
+    },
+    {
+      "name": "prior_batch_seq",
+      "type": "string"
+    },
+    {
+      "name": "prior_batch_id",
+      "type": "string"
+    },
+    {
+      "name": "acres",
+      "type": "string"
+    },
+    {
+      "name": "land_square_footage",
+      "type": "string"
+    },
+    {
+      "name": "universal_building_square_feet",
+      "type": "string"
+    },
+    {
+      "name": "universal_building_square_feet_indicator_code",
+      "type": "string"
+    },
+    {
+      "name": "building_square_feet",
+      "type": "string"
+    },
+    {
+      "name": "garage_parking_square_feet",
+      "type": "string"
+    },
+    {
+      "name": "garage_code",
+      "type": "string"
+    },
+    {
+      "name": "year_built",
+      "type": "string"
+    },
+    {
+      "name": "effective_year_built",
+      "type": "string"
+    },
+    {
+      "name": "view",
+      "type": "string"
+    },
+    {
+      "name": "pool_code",
+      "type": "string"
+    },
+    {
+      "name": "pool_flag",
+      "type": "string"
+    },
+    {
+      "name": "parking_type_code",
+      "type": "string"
+    },
+    {
+      "name": "parking_spaces",
+      "type": "string"
+    },
+    {
+      "name": "roof_type_code",
+      "type": "string"
+    },
+    {
+      "name": "roof_cover_code",
+      "type": "string"
+    },
+    {
+      "name": "quality_code",
+      "type": "string"
+    },
+    {
+      "name": "total_baths",
+      "type": "string"
+    },
+    {
+      "name": "frame_code",
+      "type": "string"
+    },
+    {
+      "name": "foundation_code",
+      "type": "string"
+    },
+    {
+      "name": "floor_code",
+      "type": "string"
+    },
+    {
+      "name": "fireplace_type_code",
+      "type": "string"
+    },
+    {
+      "name": "fireplace_number",
+      "type": "string"
+    },
+    {
+      "name": "fireplace_indicator_flag",
+      "type": "string"
+    },
+    {
+      "name": "finished_basement_area",
+      "type": "string"
+    },
+    {
+      "name": "exterior_walls_code",
+      "type": "string"
+    },
+    {
+      "name": "construction_type_code",
+      "type": "string"
+    },
+    {
+      "name": "condition_code",
+      "type": "string"
+    },
+    {
+      "name": "bldg_improvement_code",
+      "type": "string"
+    },
+    {
+      "name": "bldg_code",
+      "type": "string"
+    },
+    {
+      "name": "basement_finish_code",
+      "type": "string"
+    },
+    {
+      "name": "stories_number",
+      "type": "string"
+    },
+    {
+      "name": "stories_code",
+      "type": "string"
+    },
+    {
+      "name": "heating_code",
+      "type": "string"
+    },
+    {
+      "name": "unfinished_basement_area",
+      "type": "string"
+    },
+    {
+      "name": "units_number",
+      "type": "string"
+    },
+    {
+      "name": "seller_carryback",
+      "type": "string"
+    },
+    {
+      "name": "private_party_lender",
+      "type": "string"
+    },
+    {
+      "name": "pri_cat_code",
+      "type": "string"
+    },
+    {
+      "name": "mtg_sec_cat_codes",
+      "type": "string"
+    },
+    {
+      "name": "deed_sec_cat_codes",
+      "type": "string"
+    },
+    {
+      "name": "cltv",
+      "type": "string"
+    },
+    {
+      "name": "legal_1",
+      "type": "string"
+    },
+    {
+      "name": "legal_2",
+      "type": "string"
+    },
+    {
+      "name": "legal_3",
+      "type": "string"
+    },
+    {
+      "name": "add_change_flag",
+      "type": "string"
+    },
+    {
+      "name": "refid",
+      "type": "string"
+    },
+    {
+      "name": "input_fips_code",
+      "type": "string"
+    },
+    {
+      "name": "input_parcel_id",
+      "type": "string"
+    },
+    {
+      "name": "property_match_code",
+      "type": "string"
+    },
+    {
+      "name": "exception_code",
+      "type": "string"
+    }
+  ]
+}
