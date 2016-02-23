@@ -3,13 +3,14 @@ import json
 import sys
 import csv
 from csvvalidator import *
+from examples import schema_corelogic
 
-from examples.schema_reisource import reisource
-
+from column_name_dict import column_name_dict
 
 def main():
-    validator = CSVValidator(reisource)
 
+    validator = CSVValidator(schema_corelogic.corelogic,column_name_dict)
+    print column_name_dict
     # basic header and record length checks
     validator.add_header_check('EX1', 'bad header')
     validator.add_record_length_check('EX2', 'unexpected record length')
@@ -36,9 +37,14 @@ def main():
     validator.add_record_check(check_state)
 
     # validate the data and write problems to stdout
-    data = csv.reader('examples/reisource_travis.csv', delimiter=',')
+    data = csv.reader(open('examples/corelogic_master_sow02.csv'), delimiter=',')
+
+
+
+    #data_header = map_header(data_header, column_name_dict)
+
     problems = validator.validate(data)
-    write_problems(problems, sys.stdout)
+    #write_problems(problems, sys.stdout)
 
 
 
