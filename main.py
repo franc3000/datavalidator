@@ -5,19 +5,20 @@ import csv
 from csvvalidator import *
 from examples import schema_corelogic
 
+
 from column_name_dict import column_name_dict
 
 def main():
-
-    validator = CSVValidator(schema_corelogic.corelogic,column_name_dict)
-    print column_name_dict
-    # basic header and record length checks
-    validator.add_header_check('EX1', 'bad header')
-    validator.add_record_length_check('EX2', 'unexpected record length')
-
-    # some simple value checks
-    validator.add_value_check(
-        'LAST MARKET SALE PRICE', float, 'EX3', 'LAST MARKET SALE PRICE must be number')
+    #schema_corelogic.corelogic
+    # validator = CSVValidator(json.load(open('examples/schema_corelogic.json')),column_name_dict)
+    # print column_name_dict
+    # # basic header and record length checks
+    # validator.add_header_check('EX1', 'bad header')
+    # validator.add_record_length_check('EX2', 'unexpected record length')
+    #
+    # # some simple value checks
+    # validator.add_value_check(
+    #     'LAST MARKET SALE PRICE', float, 'EX3', 'LAST MARKET SALE PRICE must be number')
 
     # validator.add_value_check(
     #     'patient_id', int, 'EX4', 'patient id must be an integer')
@@ -29,21 +30,25 @@ def main():
     #     'date_inclusion', datetime_string('%Y-%m-%d'), 'EX7', 'invalid date')
 
     # a more complicated record check
-    def check_state(r):
-        state = int(r['PROPERTY STATE'])
-        valid = state == 'TX'
-        if not valid:
-            raise RecordError('EX8', 'invalid Property State')
-    validator.add_record_check(check_state)
+    # def check_state(r):
+    #     state = int(r['PROPERTY STATE'])
+    #     valid = state == 'TX'
+    #     if not valid:
+    #         raise RecordError('EX8', 'invalid Property State')
+    # validator.add_record_check(check_state)
 
     # validate the data and write problems to stdout
-    data = csv.reader(open('examples/corelogic_master_sow02.csv'), delimiter=',')
+    # data = csv.reader(open('examples/corelogic_master_sow02.csv'), delimiter=',')
 
-
+    validator = CSVValidator(json.load(open('examples/schema_corelogic.json')),column_name_dict)
+    data = 'examples/corelogic_master_sow02.csv'
+    validator.validate(data)
+    bad_rows, fixed_df = validator.run_schema_checks()
+    print 'Bad rows percent: %s' % (len(bad_rows)*1.0/(len(fixed_df)*100 ))
 
     #data_header = map_header(data_header, column_name_dict)
 
-    problems = validator.validate(data)
+    #problems = validator.validate(data)
     #write_problems(problems, sys.stdout)
 
 
