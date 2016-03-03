@@ -41,10 +41,26 @@ def main():
     # data = csv.reader(open('examples/corelogic_master_sow02.csv'), delimiter=',')
 
     validator = CSVValidator(json.load(open('examples/schema_corelogic.json')),column_name_dict)
+
     data = 'examples/corelogic_master_sow02.csv'
     validator.validate(data)
     bad_rows, fixed_df = validator.run_schema_checks()
+
+    def check_state(cell):
+        valid = 5<cell<100
+        if not valid:
+            raise Error('invalid Property State')
+
     print 'Bad rows percent: %s' % (len(bad_rows)*1.0/(len(fixed_df)*100 ))
+    ### write errors to the bad_rows variable (default) ###
+    validator.add_generic_check({'type_of_check':'custom' ,'column':'cltv','value':check_state})
+    validator.run_checks()
+
+
+    ### throw an exception immediately ###
+    validator.clear_checks()
+    validator.add_generic_check({'type_of_check':'custom' ,'column':'cltv','value':check_state,'exception':Error})
+    validator.run_checks()
 
     #data_header = map_header(data_header, column_name_dict)
 

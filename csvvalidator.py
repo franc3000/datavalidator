@@ -2,6 +2,7 @@ import warnings
 import traceback
 import csv
 import pandas as pd
+import numpy as np
 from dateutil.parser import parse
 from functools import partial
 
@@ -54,6 +55,7 @@ class CSVValidator(object):
         self.schema = schema
         self.checks = []
         self.column_name_dict = column_name_dict
+        self.bad_rows = {}
 
     @staticmethod
     def execute_check(check):
@@ -83,13 +85,16 @@ class CSVValidator(object):
         self.checks.append(check)
 
     def add_header_check(self, value, message):
-        self.checks.append({'type': 'header','message':message, 'value':value })
+        self.checks.append({'type_of_check': 'header','message':message, 'value':value })
 
     def add_record_length_check(self, value, message):
-        self.checks.append({'type': 'length','message':message, 'value':value })
+        self.checks.append({'type_of_check': 'length','message':message, 'value':value })
 
     def add_value_check(self, column, column_type, value, message):
-        self.checks.append({'type': 'value','message':message, 'column':column, 'column_type':type,'value':value })
+        self.checks.append({'type_of_check': 'value','message':message, 'column':column, 'column_type':type,'value':value })
+
+    def clear_checks(self):
+        self.checks = []
 
     def run_checks(self):
         if self.checks:
@@ -97,35 +102,37 @@ class CSVValidator(object):
             for check in checks:
                 if 'column' in check:
                     print 'a'
-                    self.run_column_check(check)
+                    self.apply_column_check(check)
                 elif 'header' in check['type']:
                     pass
                 elif 'length' in check['type']:
                     pass
 
 
+    def concat_two_dict(self, d1,d2):
+        for key2 in d2:
+                if key2 in d1:
+                    d1[key2].append(d2[key2])
+                else:
+                    d1[key2] = d2[key2]
+        return d1
+
     def run_schema_checks(self):
         df = self.df
-        bad_rows = {}
         new_df = pd.DataFrame([])
         for col in df:
-            check = {'column':col,'type':'type','value':self.schema[col],'not_update_value':True}
+            check = {'column':col,'type_of_check':'type','value':self.schema[col],'not_update_value':True}
             result = self.apply_column_check(check=check)
             new_col = []
             for n,cell in enumerate(result):
-                if not cell[0]:
-                    if n not in bad_rows:
-                        bad_rows[n] = []
-                    else:
-                        bad_rows[n].append('Column %s check for %s==%s' % (col,check['type'],check['value']))
                 new_col.append(cell[1])
             new_df[col]=new_col
-        return bad_rows,new_df
+
+        return self.bad_rows,new_df[~np.array(self.bad_rows.keys())]
 
     def apply_column_check(self, check):
 
         bad_rows = {}
-
         #check = {'column':col,'type':'type','value':self.schema[col]}
         column = check['column']
         result = map(partial(self.apply_check_to_cell,check=check), self.df[column])
@@ -135,15 +142,15 @@ class CSVValidator(object):
         for n,cell in enumerate(result):
             if not cell[0]:
                 if n not in bad_rows:
-                    bad_rows[n] = []
+                    bad_rows[n] = ['Column %s check for %s==%s has failed' % (column,check['type_of_check'],check['value'])]
                 else:
-                    bad_rows[n].append('Column %s check for %s==%s' % (column,check['type'],check['value']))
-                    new_col.append(cell)
+                    bad_rows[n].append('Column %s check for %s==%s has failed' % (column,check['type_of_check'],check['value']))
+                    #new_col.append(cell)
             new_col.append(cell)
         if not check.get('update_value'):
             self.df[column] = [i[1] for i in new_col]
+        self.bad_rows = self.concat_two_dict(self.bad_rows,bad_rows)
         return new_col
-
 
 #         column = check['column']
 #         if column in self.df.columns:
@@ -155,30 +162,32 @@ class CSVValidator(object):
                 'string': str,
                 'int': int,
                 'date': parse
+                  }
 
-            }
-        if check['type'] == 'type':
+        if check['type_of_check'] == 'type':
             try:
                 ret = mapping[check['value']](cell)
 
-                return (True, ret)
+                return (True, cell)
             except:
-                print traceback.print_exc()
+               # print traceback.print_exc()
+                if check.get('exception'):raise check.get('exception')()
                 return (False, cell)
-        elif check['type'] == 'value':
+        elif check['type_of_check'] == 'value':
             try:
                 ret = check['value'] == cell
                 return (True, cell)
             except:
                 return (False, cell)
-        elif check['type'] == 'custom':
+        elif check['type_of_check'] == 'custom':
             try:
                 ret = check['value'](cell)
                 return (True, cell)
             except:
+
+                if check.get('exception'):raise check.get('exception')()
+                #print traceback.print_exc()
                 return (False, cell)
-
-
 
 
 
@@ -191,6 +200,7 @@ class CSVValidator(object):
         df.columns = map(format_col_name, df.columns)
 
         df.columns = [self.column_name_dict[i] if i in self.column_name_dict else i for i in df.columns ]
+        print len(df)
         #schema = map(format_col_name, self.schema.keys())
         #self.schema = schema
         #schema = {column_name_dict[i]:self.schema[i] if i in column_name_dict else i for i in self.schema}
